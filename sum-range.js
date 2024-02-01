@@ -1,9 +1,20 @@
 function range(start, end, step = 1) {
-  // Add code.
+   start = Math.min(1);
+   end = Math.max(10);
+   numbers = [start,end]
+  for (let i=numbers[0]; i<= numbers[1]; i++) {
+    numbers.push(i)
+  }
+  return numbers;
 }
 
 function sum(numbers) {
-  // Add code.
+  let total = 0;
+  for(let i=0; i < numbers.length ; i++){
+   total += numbers[i]
+  }
+  return total;
+
 }
 
 
