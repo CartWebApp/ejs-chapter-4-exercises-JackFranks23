@@ -1,16 +1,16 @@
 function range(start, end, step = 1) {
-   start = Math.min(1);
-   end = Math.max(10);
-   numbers = [start,end]
-  for (let i=numbers[0]; i<= numbers[1]; i++) {
+
+   numbers = []
+  for (let i = start; i != Math.abs(end); i += step) {
     numbers.push(i)
   }
+  numbers.push(end)
   return numbers;
 }
 
 function sum(numbers) {
   let total = 0;
-  for(let i=0; i < numbers.length ; i++){
+  for(let i = 0 ; i < numbers.length ; i++){
    total += numbers[i]
   }
   return total;
